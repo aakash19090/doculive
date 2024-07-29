@@ -1,35 +1,42 @@
 {
-  "name": "doculive",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.1",
-    "lucide-react": "^0.417.0",
-    "next": "14.2.5",
-    "react": "^18",
-    "react-dom": "^18",
-    "sharp": "^0.33.4",
-    "tailwind-merge": "^2.4.0",
-    "tailwindcss-animate": "^1.0.7"
-  },
-  "devDependencies": {
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "@types/tailwindcss": "^3.1.0",
-    "eslint": "^8",
-    "eslint-config-next": "14.2.5",
-    "postcss": "^8",
-    "prettier-plugin-tailwindcss": "^0.6.5",
-    "tailwindcss": "^3.4.1",
-    "typescript": "^5"
-  }
+    "name": "doculive",
+    "version": "0.1.0",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,css,md,json,mjs}": "prettier --write"
+    },
+    "dependencies": {
+        "@ianvs/prettier-plugin-sort-imports": "^4.3.1",
+        "class-variance-authority": "^0.7.0",
+        "clsx": "^2.1.1",
+        "lucide-react": "^0.417.0",
+        "next": "14.2.5",
+        "react": "^18",
+        "react-dom": "^18",
+        "sharp": "^0.33.4",
+        "tailwind-merge": "^2.4.0",
+        "tailwindcss-animate": "^1.0.7"
+    },
+    "devDependencies": {
+        "@types/node": "^20",
+        "@types/react": "^18",
+        "@types/react-dom": "^18",
+        "@types/tailwindcss": "^3.1.0",
+        "eslint": "^8",
+        "eslint-config-next": "14.2.5",
+        "husky": "^9.1.4",
+        "lint-staged": "^15.2.7",
+        "postcss": "^8",
+        "prettier": "^3.3.3",
+        "prettier-plugin-tailwindcss": "^0.6.5",
+        "tailwindcss": "^3.4.1",
+        "typescript": "^5"
+    }
 }
