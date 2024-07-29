@@ -9,7 +9,23 @@
     "useTabs": false,
     "bracketSpacing": true,
     "trailingComma": "all",
-    "plugins": ["prettier-plugin-tailwindcss"],
+    "plugins": ["prettier-plugin-tailwindcss", "@ianvs/prettier-plugin-sort-imports"],
+    "importOrder": [
+        "^react$|next",
+        "",
+        "<THIRD_PARTY_MODULES>",
+        "",
+        "^(@/components)(/.*)$",
+        "",
+        "^(@/lib)(/.*)$",
+        "",
+        "^(@/types)(/.*)$",
+        "",
+        "^(?!.*[.]css$)[./].*$",
+        ".css$"
+    ],
+    "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+    "importOrderTypeScriptVersion": "5.0.0",
     "tailwindFunctions": ["clsx"],
     "tailwindConfig": "./tailwind.config.ts"
 }
