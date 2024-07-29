@@ -1,5 +1,13 @@
-import Image from 'next/image';
+import { Button } from '@/components/ui/button';
 
-export default function Home() {
-    return <main></main>;
-}
+const HomePage = () => {
+    return (
+        <main>
+            <div className='container my-10'>
+                <Button>Click me</Button>
+            </div>
+        </main>
+    );
+};
+
+export default HomePage;
